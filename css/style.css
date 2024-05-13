@@ -31,6 +31,11 @@
 
 /* CUSTOM PROPS */
 
+:root {
+  --blue:#19a1ae;
+  --grey:#6b7082;
+  --dark:#2e3349;
+}
 
 /* GLOBAL */
 
@@ -51,10 +56,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--blue);
+  color: var(--grey);
   font-family:"Kumbh Sans", "Arial", sans-serif;
   line-height: 1.5;
+  background-image: url(../img/bg-pattern-top.svg),
+                    url(../img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position:-203px -500px, 718px 340px;
 }
 
 img {
