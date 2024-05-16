@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Profile Card</title>
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="./css/normalize.css">
@@ -12,7 +12,43 @@
 </head>
 <body>
 
-    <h1>hello world</h1>
+  <main class="card__main">
+    <figure class="card__header">
+      <img src="./img/bg-pattern-card.svg" alt="" class="card__header-img" width="350" height="140">
+    </figure>
+
+    <article class="card__content">
+      <a href="https://github.com/ZoitovNurulloh" class="card__content-link" target="_blank">
+        <img src="./img/image-victor.jpg" alt="Image Victor" class="card__content-img" width="100" height="100">
+      </a>
+
+      <div class="card__content-description">
+        <h3 class="card__content-name">Victor crest</h3>
+        <span class="card__content-age">26</span>
+      </div>
+
+      <p class="card__content-city">London</p>
+    </article>
+
+    <footer class="card__footer">
+      <ul class="card__footer-list">
+        <li class="card__footer-item">
+          <span class="card__footer-info">80K</span>
+          <span class="card__footer-description">Followers</span>
+        </li>
+        <li class="card__footer-item">
+          <span class="card__footer-info">803K</span>
+          <span class="card__footer-description">Likes</span>
+        </li>
+        <li class="card__footer-item">
+          <span class="card__footer-info">1.4K</span>
+          <span class="card__footer-description">Photos</span>
+        </li>
+      </ul>
+    </footer>
+  </main>
+
+
   <script src="/js/index.js"></script>
 </body>
 </html>
