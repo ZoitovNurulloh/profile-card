@@ -122,6 +122,8 @@ input:-webkit-autofill:focus {
   display: block;
   width: 350px;
   height: 140px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card__content {
@@ -133,7 +135,7 @@ input:-webkit-autofill:focus {
 
 .card__content-link {
   top:90px;
-  left:120px;
+  left:calc(50% - 50px);
   position: absolute;
   display: block;
 }
@@ -211,4 +213,50 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+
+@media only screen and (max-width:1200px) {
+  body {
+    background-position: left -350px top -600px,
+                      right -350px bottom -700px;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  body {
+    background-position: left -450px top -700px,
+                      right -400px bottom -750px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  body {
+    background-size: 622px 622px;
+    background-position: left -250px  top -300px,
+                          right -250px  bottom -350px;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  body {
+    background-size: 622px 622px;
+    background-position: left -350px  top -400px,
+                          right -350px  bottom -450px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  body {
+    background-size: 622px 622px;
+    background-position: left -400px  top -400px,
+                          right -400px  bottom -400px;
+  }
+
+  .card__main {
+    max-width: 326px;
+  }
+  .card__footer-description {
+  font-size: 10px;
+  }
 }
